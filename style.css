@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body{
+    color: #1A4122;
+    font-family: serif;
+}
+.nav-items{
+    font-family: sans-serif;
+    height: 100px;
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.navleft,.navright{
+    width: 25%;
+}
+.nav-items a{
+   font-weight: 550;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.Btn{
+    text-decoration: none;
+    font-size: 10px;
+    color: #fff;
+    padding:8px;
+    border-radius: 18px;
+    background-color: #c15627;
+  
+}
+
+.video-box{
+    object-fit: cover;
+    min-height: 550px;
+    width: 100%;
+    height: 100%;
+    overflow: clip;
+   
+}
+.video{
+    z-index: 1;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+
+  .vid-wrapper h2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "F37 Caslon", serif;
+    font-size: 112px;
+  }
+
+  /* welcom-section */
+
+  .welcom-section{
+    height: 100vh;
+    
+  }
+
+  .content-wrapper{
+    /* width: 100%; */
+   padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .content{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content h3{
+    color: #647b4e;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .content h2{
+    text-align: center;
+    /* color: #647b4e; */
+    font-family: playfair display;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+ 
+  .content p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    font-family: serif;
+   
+
+  }
+  .content .Btn{
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+  .content .Btn i{
+    transition: transform 0.3s ease-in-out
+    
+  }
+  .content .Btn:hover i{
+    /* padding-left: 1.2rem; */
+    transform: translateX(10px);
+  }
+  .img-content img{
+    padding-top: 3rem;
+    border-top-left-radius: 17rem;
+    width: 650px;
+    height: 80vh;
+    object-fit: cover;
+  }
