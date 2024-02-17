@@ -1,39 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-body{
-    color: #1A4122;
-    font-family: serif;
+body {
+  color: #1a4122;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
 }
-.nav-items{
-    font-family: sans-serif;
-    height: 100px;
-    /* border: 1px solid black; */
-    /* width: 100%; */
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
-.navleft,.navright{
-    width: 25%;
-}
-.nav-items a{
-   font-weight: 550;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.nav-items {
+  font-family: sans-serif;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 5rem;
+  margin: 1rem;
 }
 
-.Btn{
-    text-decoration: none;
-    font-size: 10px;
-    color: #fff;
-    padding:8px;
-    border-radius: 18px;
-    background-color: #c15627;
-  
+.navleft,
+.navright {
+  width: 25%;
+  padding-bottom: 1rem;
+}
+.nav-items a {
+  font-weight: 550;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Btn:hover {
+  background-color: #e35b20;
+}
+.nav-link:hover {
+  color: #e35b20;
+}
+
+.logo a:hover {
+  background-color: #fff !important;
+  color: black !important;
+}
+
+.nav-item .Btn {
+  padding: 0.5rem 1rem;
+}
+.Btn {
+  background-color: #c15627;
+  border-radius: 30px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 2;
 }
 
 .video-box{
@@ -65,69 +89,364 @@ body{
   }
 
   /* welcom-section */
+ /* welcom-section */
 
-  .welcom-section{
+.welcom-section {
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.content-wrapper {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content h3 {
+  color: #647b4e;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.content h2 {
+  color: #1a4122;
+  text-align: center;
+  font-family: "F37 Caslon", serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92%;
+  letter-spacing: -3px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.content p {
+  word-spacing: 2px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #1a4122;
+}
+.Btn {
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+}
+.Btn i {
+  transition: transform 0.3s ease-in-out;
+}
+.Btn:hover i {
+  transform: translateX(10px);
+}
+
+.img-content img {
+  padding-top: 3rem;
+  border-top-left-radius: 17rem;
+  width: 650px;
+  height: 80vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+  /* styling section 3 */
+  .wedding{
     height: 100vh;
-    
   }
-
-  .content-wrapper{
-    /* width: 100%; */
-   padding: 3rem 0;
+  .wedding-wrapper{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .content{
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-  }
-  .content h3{
-    color: #647b4e;
-    letter-spacing: 4px;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-
-  .content h2{
-    text-align: center;
-    /* color: #647b4e; */
-    font-family: playfair display;
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
- 
-  .content p{
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: lighter;
-    font-family: serif;
-   
 
   }
-  .content .Btn{
-    border-radius: 1.5rem;
-    font-size: 1.5rem;
-    padding: 0 2rem;
+  .img-wrapper{
+    width: 500px;
+    height: 130vh;
   }
-  .content .Btn i{
-    transition: transform 0.3s ease-in-out
-    
-  }
-  .content .Btn:hover i{
-    /* padding-left: 1.2rem; */
-    transform: translateX(10px);
-  }
-  .img-content img{
-    padding-top: 3rem;
-    border-top-left-radius: 17rem;
-    width: 650px;
-    height: 80vh;
+  .img-wrapper img{
+    margin-top: 4rem;
+    border-top-left-radius: 16rem;
+    border-top-right-radius:16rem ;
+    width: 100%;
+    height: 80%;
     object-fit: cover;
   }
+ 
+  .heading h2{
+    /* padding: 10rem 4rem; */
+    text-align:start;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    color: #1A4122;
+    font-family: "F37 Caslon", serif;
+
+  }
+  .exc-content p{
+    width: 400px;
+    word-spacing: 2px;
+    text-align: start;
+    font-size: 1.3rem;
+    font-weight:lighter;
+    color: #1a412295;
+    font-family: serif;
+  }
+  .btns h3{
+   line-height: 3rem;
+    color: #647b4e;
+  }
+ 
+  /* section 4 */
+ 
+  
+  .venue-img{
+    height: 80vh;
+    width: 100%;
+    min-height: 595px;
+    background-image: url('https://24carrots.com/wp-content/uploads/2023/10/unforegetable-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+
+
+  }
+
+  .venue-img .circle{
+    position: absolute;
+    left: 50%;
+    /* border: 1px solid black; */
+    transform: translate(-50%, -50%);
+    border-radius: 345px 345px 0 0;
+    background-color: #fff;
+    display: block;
+    z-index: 23344;
+    height: 316px;
+    width: 643px;
+    bottom: -292px;
+  }
+   .venue-content{
+    position: relative;
+    z-index: 2;
+    width: 500px;
+    display: block;
+    margin: -50px auto 0;
+  }
+  .venue-content h2{
+    color: #1A4122;
+    text-align: center;
+    font-family: "F37 Caslon", serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92%;
+    letter-spacing: -3px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+
+  }
+
+  .venue-content h3{
+    color: #647B4E;
+    text-align: center;
+    font-family: "Rustica", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .venue-content p{
+    text-align:center;
+    color:  #1a412295;
+    font-family: "F37 Caslon", serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+  .venue-content .Btn{
+  position: absolute;
+  left: 30%;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  font-family:  "F37 Caslon", serif;
+  }
+
+  /* section5 */
+
+  .img-containers{
+  
+    overflow: auto;
+    position: relative;
+  }
+
+  .img-box{
+    position: relative;
+    margin: 20px;
+    /* border: 1px solid black; */
+ 
+   
+  }
+  img{
+    max-width: 600px;
+    height: 90vh;
+     /* padding: 20px; */
+     
+   }
+  .img-box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    height: 0%;
+    background-color: #e77d4fbc;
+    transition: height .3s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+  }
+  .img-box::-webkit-scrollbar-button{
+    width: 0;
+  }
+  
+ 
+
+  .img-text{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: #FFF;
+    /* transform: translate(-50%,-50%); */
+    opacity: 0;
+    z-index: 2;
+    transition: top .3s ease-in-out;
+  }
+ .img-box:hover::after,
+ .img-box img:hover::after{
+  opacity: 1;
+  /* z-index: 2; */
+    height: 100%;
+ }
+ hr{
+  width:460px;
+  font-size: 2rem;
+ }
+/* .img-box:hover .btn{
+  opacity: 1;
+  bottom: 50%;
+    color: #FFF;
+    
+}  */
+ .img-box:hover .img-text{
+  opacity: 1;
+    top: 70%;
+ }
+
+ /* section5 */
+
+ .business-textContent h2{
+  color: #1A4122;
+  text-align: center;
+  font-family: "F37 Caslon", serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 92%; */
+  /* letter-spacing: -3px; */
+ 
+ }
+ .business-textContent{
+  width: 750px;
+  /* height: 500px; */
+  margin: auto;
+ }
+ .business-textContent p{
+    text-align:center;
+    color: #1a412295;
+    font-family: "F37 Caslon", serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+ }
+ .business-video{
+  width: 1220px;
+  height: 620px;
+  margin: auto;
+  /* border: 1px solid black; */
+ }
+
+ .box1,.box3,.box3{
+  width: 300px;
+  height: 60vh;
+  /* border: 1px solid black; */
+ }
+ .box2 img{
+  border-radius: 345px 345px 0 0;
+ }
+ .sub-box{
+  display:flex ;
+  font-family: 'Times New Roman', Times, serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-family:  "F37 Caslon", serif;
+  
+ }
+ 
+ .sub-box .Btn{
+  background:#FFF;
+  color: #C15627;
+  border: 1px solid #C15627;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1rem;
+ }
+ .p-border{
+  border-bottom: 2px solid #647b4e;
+ }
+
+ .footer-section{
+  padding: 80px 0px 20px;
+    background-color: #E9E4E0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100px;
+    
+ }
+
+ .f-logo{
+  width: 30%;
+ }
+ .f-right{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }

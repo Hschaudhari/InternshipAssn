@@ -16,9 +16,9 @@
       crossorigin="anonymous"
     ></script>
     <script
-    src="https://kit.fontawesome.com/8476539209.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/8476539209.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -26,10 +26,10 @@
     <header class="nav-items">
       <div class="navleft">
         <ul
-          class="navbar-nav d-flex flex-row justify-content-between align-items-center"
+          class="navbar-nav d-flex flex-row justify-content-around align-items-center"
         >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
@@ -41,7 +41,7 @@
       </div>
       <div class="logo">
         <a href="/" class="nav-link text-center">
-          <h2>24 Carrots</h2>
+          <h3 class="fw-bold">24 Carrots</h3>
           <span class="text-secondary fw-bold">Catering & Events</span>
         </a>
       </div>
@@ -50,17 +50,31 @@
           class="navbar-nav d-flex flex-row justify-content-between align-items-center"
         >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Venues</a>
+            <a class="nav-link" aria-current="page" href="#">Venues</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link Btn" href="#">Get In Touch</a>
+            <a class="Btn" href="#">Get In Touch</a>
           </li>
         </ul>
       </div>
     </header>
+    <!-- <section class="video-box">
+      <div class="vid-wrapper">
+        <video
+          class="video"
+          autoplay
+          muted
+          loop
+          poster="https://24carrots.com/wp-content/uploads/2023/08/chef.png"
+          src="https://24carrots.com/wp-content/video/24carrtos-home-banner.mp4
+        "
+        ></video>
+        <h2>Simply the Finest</h2>
+      </div>
+    </section> -->
     <section class="video-box">
       <div class="vid-wrapper">
         <video
@@ -75,28 +89,479 @@
         <h2>Simply the Finest</h2>
       </div>
     </section>
+    <!--  -->
     <section class="welcom-section">
-        <div class="content-wrapper">
-      <div class="text-content">
-        <div class="content">
-          <h3>Welcome to 24 carrots</h3>
-          <h2>Remarkable Catering <span style="font-family: sans;">&</span> Events</h2>
-          <p>
-            24 Carrots is the premier catering and events company of choice in
-            Southern California. We create remarkable experiences by offering
-            the finest quality foods and providing unsurpassed personalized
-            service, driven by our passion for life's special&nbsp;occasions.
-          </p>
-          <a href="/" class="Btn">Get In Touch  <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="flex-container">
+        <div class="content-wrapper wrapper row row-cols-1 row-cols-lg-2">
+          <div class="text-content col">
+            <div class="content">
+              <h3>Welcome to 24 carrots</h3>
+              <h2>
+                Remarkable Catering
+                <span style="font-family: sans">&</span> Events
+              </h2>
+              <p>
+                24 Carrots is the premier catering and events company of choice
+                in Southern California. We create remarkable experiences by
+                offering the finest quality foods and providing unsurpassed
+                personalized service, driven by our passion for life's
+                special&nbsp;occasions.
+              </p>
+              <a href="/" class="Btn"
+                >Get In Touch <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active img-content col">
+                <img
+                  src="https://24carrots.com/wp-content/uploads/2023/10/1.1-Lorely-Meza-1.jpg"
+                  class="w-100"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="carousel-item img-content col">
+                <img
+                  src="https://24carrots.com/wp-content/uploads/2023/10/1.1-Lorely-Meza-1.jpg"
+                  class="w-100"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item img-content col">
+                <img
+                  src="https://24carrots.com/wp-content/uploads/2023/10/1.1-Lorely-Meza-1.jpg"
+                  class="w-100"
+                  alt="Image 3"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <div class="img-content">
-        <img
-          src="https://24carrots.com/wp-content/uploads/2023/10/1.1-Lorely-Meza-1.jpg"
-          alt=""
-        />
-      </div>
-    </div>
     </section>
+    <!-- section 3 -->
+    <section class="weddings">
+      <div class="wedding-wrapper wrapper row row-cols-1 row-cols-lg-2">
+        <div class="img-wrapper col">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2023/08/wedding-scroll-cropped.jpg"
+            alt="wedding picture"
+          />
+        </div>
+        <div class="wedding-content col">
+          <div class="heading">
+            <h2>Making Every Experience Magical</h2>
+          </div>
+          <div class="btns-and-content row row-cols-1 row-cols-md-2">
+            <div class="btns col">
+              <h2>Weddings</h2>
+              <h3 class="fw-lighter fs-3">Social</h3>
+              <h3 class="fw-lighter fs-3">Corporate</h3>
+              <h3 class="fw-lighter fs-3">Venues</h3>
+            </div>
+            <div class="exc-content col">
+              <h3>Exceptional Weddings</h3>
+              <p>
+                The most important day of your life, is ours too. Your wedding
+                should be the ultimate celebration of your relationship, and our
+                team of experts guide you through the process, offering peace of
+                mind and a remarkable&nbsp;experience.
+              </p>
+              <a href="/" class="Btn"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 -->
+    <section class="venue-wrapper">
+      <div class="venue-container">
+        <div class="venue-img">
+          <div class="circle"></div>
+          <!-- <img src="https://24carrots.com/wp-content/uploads/2023/10/unforegetable-banner.png" alt="" srcset=""> -->
+        </div>
+      </div>
+      <div class="venue-content">
+        <h3 class="text-uppercase">Venues</h3>
+        <h2>Unforgettable Venues</h2>
+        <p>
+          24 Carrots is the exclusive or preferred caterer at Southern
+          California’s most spectacular properties. From intimate understated
+          spaces to large and luxurious, we’ll help you find the event venue
+          that makes your heart skip a&nbsp;beat.
+        </p>
+        <a href="/" class="Btn text-uppercase"
+          >Expolore Venues <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+    <!-- section 4 -->
+    <section class="img-section mt-5 pt-5">
+      <div
+        class="img-containers d-flex justify-content-between align-items-center"
+      >
+        <div class="img-box">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2023/03/the-richland-tanveer-badal-13.jpg"
+            alt=""
+          />
+          <div class="img-text">
+            <a href="/" class="btn text-uppercase text-light"
+              >Expolore Venues <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <h2>The Richland</h2>
+            <hr />
+            <h3 class="text-uppercase">orange</h3>
+          </div>
+        </div>
+        <div class="img-box">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2023/08/1-1-1150x768.jpg"
+            alt=""
+          />
+          <div class="img-text">
+            <a href="/" class="btn text-uppercase text-light"
+              >Expolore Venues <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <h2>Oak Creen Golf Club</h2>
+            <hr />
+            <h3 class="text-uppercase">Ivarine</h3>
+          </div>
+        </div>
+        <div class="img-box">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2023/09/MAIN-1152x768.jpg"
+            alt=""
+          />
+          <div class="img-text">
+            <a href="/" class="btn text-uppercase text-light"
+              >Expolore Venues <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <h2>Rancho Las Lomas</h2>
+            <hr />
+            <h3 class="text-uppercase">Silaverado</h3>
+          </div>
+        </div>
+        <div class="img-box">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2023/09/0129-JR_Oak_Creek_Golf_Club_Irvine_Wedding_Photography-1152x768.jpg"
+            alt=""
+          />
+          <div class="img-text">
+            <a href="/" class="btn text-uppercase text-light"
+              >Expolore Venues <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <h2>Oak Creen Golf Club</h2>
+            <hr />
+            <h3 class="text-uppercase">Ivarine</h3>
+          </div>
+        </div>
+        <div class="img-box">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2022/08/1.-MAIN-4.jpg"
+            alt=""
+          />
+          <div class="img-text">
+            <a href="/" class="btn text-uppercase text-light"
+              >Expolore Venues <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <h2>Fransciscan Garden</h2>
+            <hr />
+            <h3 class="text-uppercase">San Juan Capistrano</h3>
+          </div>
+        </div>
+        <div class="img-box">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2022/08/1.-MAIN.jpg"
+            alt=""
+          />
+          <div class="img-text">
+            <a href="/" class="btn text-uppercase text-light"
+              >Explore Venues <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <h2>Oak Creen Golf Club</h2>
+            <hr />
+            <h3 class="text-uppercase">Ivarine</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buisness-container mt-5 pt-5">
+      <div class="business-box">
+        <div
+          class="business-textContent flex-column d-flex align-items-center justify-content-between"
+        >
+          <h2 class="text-capitalize">Far More Than Just Business</h2>
+          <p>
+            The way you do anything is the way you do everything. We haven’t
+            cracked the code on catering; we simply care unreasonably about
+            every aspect of what we do. We care about people as much as we care
+            about details, and we absolutely refuse to compromise on making your
+            day anything but the best. We’ve got your back from the initial idea
+            to the final&nbsp;farewell!
+          </p>
+        </div>
+        <div class="business-video">
+          <!-- <video style="width: 1200px; height: 600px;" autoplay src="https://www.youtube.com/embed/7gPP9hsV4a0" ></video> -->
+          <iframe
+            width="1200"
+            height="600"
+            src="https://www.youtube.com/embed/7gPP9hsV4a0"
+            title="24 Carrots Core Values | Collaboration"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div
+          class="business-textContent flex-column d-flex align-items-center justify-content-evenly"
+        >
+          <h2 class="text-capitalize">Great Food & a whole lot more</h2>
+          <p>
+            Catering is just the beginning. Sure, we love astonishing your
+            guests with attentive service, thoughtful food, and an inviting
+            environment. But what really matters most is helping you create
+            memories that will last for a lifetime. Our industry experts think
+            of all the little things that turn an ordinary event into an
+            unforgettable&nbsp;experience.
+          </p>
+          <a href="/" class="Btn text-uppercase"
+            >Explore Services <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section class="catering-container p-5 mt-5">
+      <div class="main-box d-flex justify-content-evenly align-items-center">
+        <div class="box1">
+          <div class="sub-box">
+            <h2 class="m-3">Gournment Catering</h2>
+            <p>
+              Our professionally-trained culinary team is passionate and proud
+              of our diverse and thoughtful menu, always cooking up something
+              that aligns with your great&nbsp;taste.
+            </p>
+            <a href="/" class="Btn text-uppercase"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="sub-box">
+            <h2 class="m-3">Bar Services</h2>
+            <p>
+              Our sophisticated flavor expertise enables us to create inventive
+              concoctions that generate buzz in more ways than one!
+            </p>
+            <a href="/" class="Btn text-uppercase"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box2">
+          <img
+            src="https://24carrots.com/wp-content/uploads/2023/10/Home_Services_GIF_R3.gif"
+            alt=""
+          />
+        </div>
+
+        <div class="box3">
+          <div class="sub-box">
+            <h2 class="m-3">Staffing</h2>
+            <p>
+              The hand-selected team at 24 Carrots are just as important to our
+              reputation as our gourmet food. Our staff is certainly the best at
+              what they do, and you’ll work with professionals who genuinely
+              care about the success of your event!
+            </p>
+            <a href="/" class="Btn text-uppercase"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="sub-box">
+            <h2 class="m-3">Event Production</h2>
+            <p>
+              If mind-blowing spectacles and immersive guest experiences are
+              what you’re after, the specialists at 24 Carrots can pull it off
+              on an epic scale!
+            </p>
+            <a href="/" class="Btn text-uppercase"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-lg-start">
+      
+      <section class="footer-section d-block">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row  mt-3">
+            <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4 f-logo">
+              <div class="logo ">
+                <a href="/" class="nav-link text-center text-dark fw-bold">
+                  <h2>24 Carrots</h2>
+                  <span class="text-secondary fw-bold">Catering & Events</span>
+                </a>
+              </div>
+              <p>
+                The event specialists at our Southern California headquarters
+                are available to help with every aspect of your&nbsp;event.
+              </p>
+            <p class="p-border"></p>
+            </div>
+            <div class="f-right">
+          
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+             
+              <h6 class="text-uppercase fw-bold mb-4">About <i class="fa-solid fa-arrow-right"></i
+                > </h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">About 24 Carrots</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Meet the Team</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Awards & Press</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Blog</a>
+              </p>
+            </div>
+           
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+           
+              <h6 class="text-uppercase fw-bold mb-4">Services <i class="fa-solid fa-arrow-right"></i
+                > </h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Gournmet Catering</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Bar Service</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Staffing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Production</a>
+              </p>
+            </div>
+           
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+           
+              <h6 class="text-uppercase fw-bold mb-4">Events <i class="fa-solid fa-arrow-right"></i
+                > </h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Weddings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Corporate</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Social</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Gallery</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5 pt-0 mt-0">
+           
+              <h6 class="text-uppercase  fw-bold mb-4">Venues <i class="fa-solid fa-arrow-right"></i
+                > </h6>
+                <h6 class="text-uppercase fw-bold mb-4">Careers <i class="fa-solid fa-arrow-right"></i
+                  > </h6>
+                  <h6 class="text-uppercase fw-bold mb-4">Conduct <i class="fa-solid fa-arrow-right"></i
+                    > </h6>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+           
+              <h6 class="text-uppercase fw-bold mb-4">Follow Us <i class="fa-solid fa-arrow-right"></i
+                > </h6>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none"><i class="fab  fa-facebook-f"></i>  Facebook</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none"> <i class="fa-brands fa-pinterest"></i></i>  Pintrest</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none"><i class="fab fa-linkedin"></i> Linkedin</a>
+                </p>
+                
+                
+                
+               
+            </div>
+          </div>
+           
+          </div>
+         
+        </div>
+      </section>
+  
+      <div
+        class="text-start p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+      © 2023 24 Carrot Catering & Events. All rights reserved
+      
+  
+      </div>
+      
+    </footer>
+
   </body>
 </html>
